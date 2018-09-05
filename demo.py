@@ -12,7 +12,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 oracle_conn = cx_Oracle.connect('admin/admin@localhost:1521/orcl')
-mssql_conn = pymssql.connect(server="admin",port="3723",user="sa",password="admin",database="Cash",charset="utf8")
+mssql_conn = pymssql.connect(server="admin",port="3723",user="admin",password="admin",database="Cash",charset="utf8")
 #oracle2mssql
 oracle_cur = oracle_conn.cursor()
 
